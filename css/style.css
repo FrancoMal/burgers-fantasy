@@ -168,7 +168,7 @@ header li:hover {
 }
 header li:active {
     transform: translateY(3px);
-}
+} 
 .deliverys img:hover { 
     transform: translateY(-3px);
 }
