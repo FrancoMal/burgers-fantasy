@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+* {   margin: 0;
+    padding: 0; }
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0c0c0c;
+    color: aliceblue;
+    margin:0px;
+    min-height: 70%;
+}
+/* #ff312e posible rojo */
+/* GRIDS */
+#gridReservas {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav formulario mapa"
+    "footer footer footer";
+}
+.mapaR {
+    grid-area: mapa;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+img {
+    grid-area: img;
+}
+.formulario{
+    grid-area: formulario;
+}
+.fotosBurg {
+    grid-area: fotos;
+}
+nav {
+    grid-area: nav;
+/* HEADER*/
+}
+header {
+    text-align: center;
+    font-size: 250%;
+    background-color: #333138; 
+    color:aliceblue;
+    height: 100%;
+    top: 0;
+    padding: 1px;
+    grid-area: header;
+}
+header ul {
+    list-style-type: none;
+}
+header ul li {
+    display: inline
+}
+header img {
+    width: 150px;
+}
+li a {
+    text-decoration: none;
+    color:aliceblue;
+    padding: 20px
+}
+h1 {
+    text-align: center;
+}
+.mapa {
+    grid-area: mapa;
+}
+#parrafo1 {
+    text-align: center;
+    background-color: #515052;
+    padding: 1px;
+    grid-area: parrafo;
+    margin-top: 20px;
+}
+#parrafo1 p {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+}
+#reminderReserva {
+    max-width: 300px;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: #3a3335;
+    padding: 1px;
+    font-size: 130%;
+    grid-area: footer;
+    display: flex;
+}
+footer a {
+    text-decoration: none;
+    color:grey
+}
+.footerLeft {
+    text-align: left;
+    padding-left: 30%;
+    padding-top: 5px;
+}
+.footerRight {
+    text-align: left;
+    padding-left: 20%;
+    padding-top: 5px;
+}
+.bottomFooter2 {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: 400px;
+}
+.centrar {
+    text-align: center;
+    max-width: 700px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centrar a {
+    text-decoration: none;
+    color: gray
+}
+.formulario {
+    margin-top: 40px;
+}
+#logoR {
+    padding-top: 60px;
+}
+#menuburger {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+}
+#menuburger ul {
+    list-style-type: none;
+}
+#imgburg img {
+    float: center;
+    width:  900px;
+    height: 600px;
+    object-fit: cover;
+}
+#imgburg {
+    text-align: center;
+}
+.formulario {
+    max-width: 100%;  
+    height: auto; 
+    box-sizing: border-box;  
+}
+
+/* ANIMACIONES */
+a:hover {
+    color: #ff312e;
+}
+header a:hover {
+    transform: translateY(-5px);
+}
+header a:active {
+    transform: translateY(5px);
+}
+header li:hover {
+    transform: translateY(-3px);
+}
+header li:active {
+    transform: translateY(3px);
+}
+.deliverys img:hover {
+    transform: translateY(-3px);
+}
+.deliverys img:active {
+    transform: translateY(3px);
+}
+
+/* RESPONSIVE */
+@media screen and (max-width:425px) {
+    #grilla {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "fotos"
+        "parrafo"
+        "footer";
+    }
+    li a {
+        padding: 1px;
+    } 
+    img {
+        max-width: 100%;  
+        height: auto;  
+    }
+    #menuburger {
+        max-width: 100%;  
+        height: auto;
+    }
+    textarea {
+        height: 16em;
+        width: 25em;
+    }
+    .formulario {
+        max-width: 100%;  
+        height: auto;   
+    }
+
+    .fotosBurg img {
+        width: fit-content;
+    }
+}
+@media screen and (max-width:500px) {
+iframe {
+    width: fit-content;
+ }
+}
+@media screen and (max-width:768px) {
+    #gridReservas {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "formulario"
+        "nav"
+        "mapa"
+        "footer";
+    }
+    .formulario {
+        text-align: center;
+    }
+    .mapaR {
+        text-align: center;
+    }
+    header li a {
+        padding: 10px;
+        height: 30px;
+        font-size: 30px;
+    }
+    .logoR {
+        display: none;
+    }
+    textarea {
+        height: 16em;
+        width: 25em;
+    }
+
+    textarea {
+        height: 16em;
+        width: 25em;
+    } 
+    #logoR {
+        display: none;
+    }  
+    .fotosBurg img {
+        width: fit-content;
+    }
+    }
+ @media screen and (max-width:1280px) {
+    #gridReservas {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "formulario"
+        "nav"
+        "mapa"
+        "footer";
+    }
+    .fotosBurg img {
+        width: fit-content;
+    }
+.formulario {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mapaR {
+    text-align: center;
+}
+.logoR {
+    display: none;
+}
+textarea {
+    height: 16em;
+    width: 25em;
+}
+.footerLeft {
+     padding-left: 25%;
+}
+.footerRight {
+     padding-left: 8%;
+}
+textarea {
+    height: 16em;
+    width: 25em;
+}
+
+#logoR {
+    display: none;
+}  
+}
