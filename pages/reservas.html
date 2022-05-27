@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizá tu reserva</title>
+    <link rel="shortcut icon" href="/img/icono logo.ico" type="image/x-icon">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="menu.html">Menú</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="local.html">Local</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="delivery.html">Delivery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="reservas.html">Reservas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div id="gridReservas">
+    <div class="formulario">
+        <fieldset>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" placeholder="Ingrese aquí su nombre">
+            <br><br>
+            <label for="">Correo electrónico</label>
+            <input type="text" placeholder="example@domain.com">
+            <br><br>
+            <label for="">Cantidad de personas (max 10)</label>
+            <input type="number" min="1" max="10">
+            <br><br>
+            <label for="">Seleccione fecha:</label>
+            <input type="date" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+            <br><br>
+            <label for="">Seleccione Hora:</label>
+            <input type="time"> 
+            <br><br>
+            <label for="">(Opcional) Que deseará comer, para tener ya preparado:</label>
+            <br>
+            <textarea name="" id="" cols="100" rows="16"></textarea>
+        </fieldset >
+    </div>
+   
+    <div class="mapaR">
+    <p>Estamos en Av. Santa Fe 4568, C1425BHU CABA</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.2482320143363!2d-58.42558057075894!3d-34.57904549458855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59b3c5b55b7%3A0x4a95c063f3d79197!2sAv.%20Santa%20Fe%204568%2C%20C1425BHU%20CABA!5e0!3m2!1ses-419!2sar!4v1649824735490!5m2!1ses-419!2sar" width="600" height="450" style="border:100;" allowfullscreen="false" loading="fast" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <nav class="centrar" id="reminderReserva">
+        <h2>Recuerda</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe excepturi iusto, nihil exercitationem eos animi autem itaque eum, veniam voluptates libero a quis suscipit modi fugit minima fugiat aliquam aspernatur?</p>
+    </nav>
+    </div>
+    <footer class="bottomFooter2">
+        <div class="footerLeft">
+            <h5>Teléfono: <a href="https://web.whatsapp.com/">+54 9 11 7777-7777</a></h6>
+            <h5>Estamos en Av. Santa Fe 4568, C1425BHU CABA</h5>
+        </div>
+        <div class="footerRight"> 
+            <h5>Pedí <a href="delivery.html"> Delivery</a></h5>
+            <h6>Todos los Derechos Reservados</h6>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
