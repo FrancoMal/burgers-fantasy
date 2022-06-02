@@ -7,7 +7,9 @@ $background-color_1: #0c0c0c;
 $background-color_2: #333138;
 $background-color_3: #515052;
 $background-color_4: #3a3335;
-
+@import "extend";
+@import "maps";
+@import "mixin";
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap";
 /* #ff312e posible rojo */
 /* GRIDS */
@@ -191,6 +193,7 @@ a {
 		}
 	}
 }
+
 @media screen and (max-width:425px) {
 	#grilla {
 		display: grid;

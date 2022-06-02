@@ -14,7 +14,6 @@ body {
   color: aliceblue;
   margin: 0px;
   min-height: 70%; }
-
 #gridReservas {
   display: grid;
   grid-template-areas: "header header header" "nav formulario mapa" "footer footer footer"; }
@@ -156,6 +155,9 @@ a:hover {
 
 .deliverys img:active {
   transform: translateY(3px); }
+  p {
+    font-size: 20px
+  }
 
 @media screen and (max-width: 425px) {
   #grilla {
