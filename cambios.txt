@@ -1,0 +1,6 @@
+cambios en head: 
+ <meta name="description" content="Qué esperas para venir y probar las mejores hamburguesas en Burgers Fantasy. Ahora con delivery!!">
+    <meta name="keywords" content="Hamburguesas, Burgers, Fantasy, Fantasía, Delivery"> 
+Cambios en Index: No mas Lorem
+Cambios en el menú: No mas Lorem
+Cambios en Reservas: No mas Lorem
