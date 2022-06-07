@@ -1,7 +1,4 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap";
-/* #ff312e posible rojo */
-/* GRIDS */
-/* FOOTER */
 /* ANIMACIONES */
 /* RESPONSIVE */
 * {
@@ -14,6 +11,8 @@ body {
   color: aliceblue;
   margin: 0px;
   min-height: 70%; }
+
+/* GRIDS */
 #gridReservas {
   display: grid;
   grid-template-areas: "header header header" "nav formulario mapa" "footer footer footer"; }
@@ -81,6 +80,7 @@ h1 {
   grid-area: parrafo;
   margin-top: 20px; }
   #parrafo1 p {
+    font-size: 1.3rem;
     text-align: center;
     margin-top: 20px;
     margin-left: auto;
@@ -90,6 +90,7 @@ h1 {
 #reminderReserva {
   max-width: 300px; }
 
+/* FOOTER */
 footer {
   text-align: center;
   background-color: #3a3335;
@@ -99,7 +100,7 @@ footer {
   display: flex; }
   footer a {
     text-decoration: none;
-    color: grey; }
+    color: #F7B538; }
 
 .footerLeft {
   text-align: left;
@@ -155,9 +156,6 @@ a:hover {
 
 .deliverys img:active {
   transform: translateY(3px); }
-  p {
-    font-size: 20px
-  }
 
 @media screen and (max-width: 425px) {
   #grilla {

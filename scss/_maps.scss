@@ -1,7 +1,0 @@
-
-$estiloDark:(negro:#0f0e0e, rojo:#7b0828, tamFuente:30px);
-
-#parrafo1 p {
-    font-size: map-get($estiloDark,tamFuente);
-    color: map-get($estiloDark,rojo);
-}

@@ -2,18 +2,16 @@ $color_1: aliceblue;
 $color_2: grey;
 $color_3: gray;
 $color_4: #ff312e;
+$color_5: #F7B538;
 $font-family_1: 'Roboto', sans-serif;
 $background-color_1: #0c0c0c;
 $background-color_2: #333138;
 $background-color_3: #515052;
 $background-color_4: #3a3335;
-@import "extend";
-@import "maps";
-@import "mixin";
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap";
-/* #ff312e posible rojo */
-/* GRIDS */
-/* FOOTER */
+
+
+
 /* ANIMACIONES */
 /* RESPONSIVE */
 * {
@@ -27,6 +25,7 @@ body {
 	margin: 0px;
 	min-height: 70%;
 }
+/* GRIDS */
 #gridReservas {
 	display: grid;
 	grid-template-areas: "header header header" "nav formulario mapa" "footer footer footer";
@@ -107,6 +106,7 @@ h1 {
 	grid-area: parrafo;
 	margin-top: 20px;
 	p {
+		font-size: 1.3rem;
 		text-align: center;
 		margin-top: 20px;
 		margin-left: auto;
@@ -117,6 +117,7 @@ h1 {
 #reminderReserva {
 	max-width: 300px;
 }
+/* FOOTER */
 footer {
 	text-align: center;
 	background-color: $background-color_4;
@@ -126,7 +127,7 @@ footer {
 	display: flex;
 	a {
 		text-decoration: none;
-		color: $color_2;
+		color: $color_5;
 	}
 }
 .footerLeft {
