@@ -1,6 +1,10 @@
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap";
-/* ANIMACIONES */
-/* RESPONSIVE */
+.parrafosGrandes {
+  font-size: 20px; }
+
+.letraGrande {
+  font-size: 40px; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -46,7 +50,8 @@ header {
   height: 100%;
   top: 0;
   padding: 1px;
-  grid-area: header; }
+  grid-area: header;
+  /* ANIMACIONES */ }
   header ul {
     list-style-type: none; }
     header ul li {
@@ -73,19 +78,19 @@ h1 {
 .mapa {
   grid-area: mapa; }
 
-#parrafo1 {
+#parrafo1, .letraGrande {
   text-align: center;
   background-color: #515052;
   padding: 1px;
   grid-area: parrafo;
   margin-top: 20px; }
-  #parrafo1 p {
+  #parrafo1 p, .letraGrande p {
     font-size: 1.3rem;
     text-align: center;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 700px; }
+    max-width: 900px; }
 
 #reminderReserva {
   max-width: 300px; }
@@ -157,10 +162,15 @@ a:hover {
 .deliverys img:active {
   transform: translateY(3px); }
 
+/* RESPONSIVE */
 @media screen and (max-width: 425px) {
   #grilla {
     display: grid;
     grid-template-areas: "header" "fotos" "parrafo" "footer"; }
+  #parrafo1, .letraGrande {
+    max-width: 400px; }
+  #motivador {
+    display: none; }
   li a {
     padding: 1px; }
   img {
@@ -186,7 +196,9 @@ a:hover {
     width: fit-content; }
   #imgburg img {
     object-fit: scale-down;
-    max-width: 470px; } }
+    max-width: 470px; }
+  .footerLeft {
+    padding-left: 20px; } }
 
 @media screen and (max-width: 768px) {
   #gridReservas {

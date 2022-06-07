@@ -1,0 +1,6 @@
+@mixin parrafos {
+    font-size: 20px;
+}     
+.parrafosGrandes {
+    @include parrafos();
+} 
