@@ -109,6 +109,7 @@ h1 {
 #reminderReserva {
 	max-width: 300px;
 }
+
 /* FOOTER */
 footer {
 	text-align: center;
@@ -160,6 +161,10 @@ footer {
 	max-width: 700px;
 	ul {
 		list-style-type: none;
+	}
+	h2 {
+		color: $color_4;
+
 	}
 }
 #imgburg {

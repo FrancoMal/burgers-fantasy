@@ -144,6 +144,8 @@ footer {
   max-width: 700px; }
   #menuburger ul {
     list-style-type: none; }
+  #menuburger h2 {
+    color: #ff312e; }
 
 #imgburg {
   text-align: center; }
